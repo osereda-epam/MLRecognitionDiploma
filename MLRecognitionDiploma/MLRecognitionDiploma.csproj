@@ -9,10 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.ML" Version="2.0.1" />
-      <PackageReference Include="Microsoft.ML.ImageAnalytics" Version="2.0.1" />
-      <PackageReference Include="Microsoft.ML.Vision" Version="2.0.1" />
-      <PackageReference Include="SciSharp.TensorFlow.Redist" Version="2.3.1" />
+      <PackageReference Include="Cognitio.ConvNetSharp.Core" Version="0.4.14" />
     </ItemGroup>
 
 </Project>

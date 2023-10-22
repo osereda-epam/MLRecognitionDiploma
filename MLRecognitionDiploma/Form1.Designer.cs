@@ -31,6 +31,7 @@ partial class Form1
     {
         pictureBox1 = new PictureBox();
         panel1 = new Panel();
+        button2 = new Button();
         textBox3 = new TextBox();
         textBox2 = new TextBox();
         textBox1 = new TextBox();
@@ -41,6 +42,7 @@ partial class Form1
         mLToolStripMenuItem = new ToolStripMenuItem();
         згеренуватиКартинкиДляТренуванняToolStripMenuItem = new ToolStripMenuItem();
         тренуватиМодельToolStripMenuItem = new ToolStripMenuItem();
+        label1 = new Label();
         ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
         panel1.SuspendLayout();
         menuStrip1.SuspendLayout();
@@ -55,12 +57,11 @@ partial class Form1
         pictureBox1.Size = new Size(998, 582);
         pictureBox1.TabIndex = 0;
         pictureBox1.TabStop = false;
-        pictureBox1.MouseDown += pictureBox1_MouseDown;
-        pictureBox1.MouseMove += pictureBox1_MouseMove;
-        pictureBox1.MouseUp += pictureBox1_MouseUp;
         // 
         // panel1
         // 
+        panel1.Controls.Add(label1);
+        panel1.Controls.Add(button2);
         panel1.Controls.Add(textBox3);
         panel1.Controls.Add(textBox2);
         panel1.Controls.Add(textBox1);
@@ -71,9 +72,18 @@ partial class Form1
         panel1.Size = new Size(301, 582);
         panel1.TabIndex = 1;
         // 
+        // button2
+        // 
+        button2.Location = new Point(182, 541);
+        button2.Name = "button2";
+        button2.Size = new Size(107, 29);
+        button2.TabIndex = 4;
+        button2.Text = "Clear image";
+        button2.UseVisualStyleBackColor = true;
+        // 
         // textBox3
         // 
-        textBox3.Location = new Point(36, 106);
+        textBox3.Location = new Point(32, 152);
         textBox3.Name = "textBox3";
         textBox3.Size = new Size(253, 27);
         textBox3.TabIndex = 3;
@@ -100,7 +110,6 @@ partial class Form1
         button1.TabIndex = 0;
         button1.Text = "button1";
         button1.UseVisualStyleBackColor = true;
-        button1.Click += button1_Click;
         // 
         // menuStrip1
         // 
@@ -124,7 +133,6 @@ partial class Form1
         вибратиToolStripMenuItem.Name = "вибратиToolStripMenuItem";
         вибратиToolStripMenuItem.Size = new Size(151, 26);
         вибратиToolStripMenuItem.Text = "Вибрати";
-        вибратиToolStripMenuItem.Click += вибратиToolStripMenuItem_Click;
         // 
         // mLToolStripMenuItem
         // 
@@ -138,14 +146,21 @@ partial class Form1
         згеренуватиКартинкиДляТренуванняToolStripMenuItem.Name = "згеренуватиКартинкиДляТренуванняToolStripMenuItem";
         згеренуватиКартинкиДляТренуванняToolStripMenuItem.Size = new Size(359, 26);
         згеренуватиКартинкиДляТренуванняToolStripMenuItem.Text = "Згеренувати картинки для тренування";
-        згеренуватиКартинкиДляТренуванняToolStripMenuItem.Click += згеренуватиКартинкиДляТренуванняToolStripMenuItem_Click;
         // 
         // тренуватиМодельToolStripMenuItem
         // 
         тренуватиМодельToolStripMenuItem.Name = "тренуватиМодельToolStripMenuItem";
         тренуватиМодельToolStripMenuItem.Size = new Size(359, 26);
         тренуватиМодельToolStripMenuItem.Text = "Тренувати модель";
-        тренуватиМодельToolStripMenuItem.Click += тренуватиМодельToolStripMenuItem_Click;
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Location = new Point(36, 129);
+        label1.Name = "label1";
+        label1.Size = new Size(75, 20);
+        label1.TabIndex = 5;
+        label1.Text = "Результат";
         // 
         // Form1
         // 
@@ -181,4 +196,6 @@ partial class Form1
     private TextBox textBox3;
     private TextBox textBox2;
     private TextBox textBox1;
+    private Button button2;
+    private Label label1;
 }
