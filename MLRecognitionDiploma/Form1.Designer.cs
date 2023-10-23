@@ -31,6 +31,7 @@ partial class Form1
     {
         pictureBox1 = new PictureBox();
         panel1 = new Panel();
+        label1 = new Label();
         button2 = new Button();
         textBox3 = new TextBox();
         textBox2 = new TextBox();
@@ -42,7 +43,7 @@ partial class Form1
         mLToolStripMenuItem = new ToolStripMenuItem();
         згеренуватиКартинкиДляТренуванняToolStripMenuItem = new ToolStripMenuItem();
         тренуватиМодельToolStripMenuItem = new ToolStripMenuItem();
-        label1 = new Label();
+        імпортуватиМодельToolStripMenuItem = new ToolStripMenuItem();
         ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
         panel1.SuspendLayout();
         menuStrip1.SuspendLayout();
@@ -71,6 +72,15 @@ partial class Form1
         panel1.Name = "panel1";
         panel1.Size = new Size(301, 582);
         panel1.TabIndex = 1;
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Location = new Point(36, 129);
+        label1.Name = "label1";
+        label1.Size = new Size(75, 20);
+        label1.TabIndex = 5;
+        label1.Text = "Результат";
         // 
         // button2
         // 
@@ -110,6 +120,7 @@ partial class Form1
         button1.TabIndex = 0;
         button1.Text = "button1";
         button1.UseVisualStyleBackColor = true;
+        button1.Click += button1_Click;
         // 
         // menuStrip1
         // 
@@ -131,12 +142,13 @@ partial class Form1
         // вибратиToolStripMenuItem
         // 
         вибратиToolStripMenuItem.Name = "вибратиToolStripMenuItem";
-        вибратиToolStripMenuItem.Size = new Size(151, 26);
+        вибратиToolStripMenuItem.Size = new Size(224, 26);
         вибратиToolStripMenuItem.Text = "Вибрати";
+        вибратиToolStripMenuItem.Click += вибратиToolStripMenuItem_Click;
         // 
         // mLToolStripMenuItem
         // 
-        mLToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { згеренуватиКартинкиДляТренуванняToolStripMenuItem, тренуватиМодельToolStripMenuItem });
+        mLToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { згеренуватиКартинкиДляТренуванняToolStripMenuItem, тренуватиМодельToolStripMenuItem, імпортуватиМодельToolStripMenuItem });
         mLToolStripMenuItem.Name = "mLToolStripMenuItem";
         mLToolStripMenuItem.Size = new Size(43, 24);
         mLToolStripMenuItem.Text = "ML";
@@ -153,14 +165,12 @@ partial class Form1
         тренуватиМодельToolStripMenuItem.Size = new Size(359, 26);
         тренуватиМодельToolStripMenuItem.Text = "Тренувати модель";
         // 
-        // label1
+        // імпортуватиМодельToolStripMenuItem
         // 
-        label1.AutoSize = true;
-        label1.Location = new Point(36, 129);
-        label1.Name = "label1";
-        label1.Size = new Size(75, 20);
-        label1.TabIndex = 5;
-        label1.Text = "Результат";
+        імпортуватиМодельToolStripMenuItem.Name = "імпортуватиМодельToolStripMenuItem";
+        імпортуватиМодельToolStripMenuItem.Size = new Size(359, 26);
+        імпортуватиМодельToolStripMenuItem.Text = "Імпортувати модель";
+        імпортуватиМодельToolStripMenuItem.Click += імпортуватиМодельToolStripMenuItem_Click;
         // 
         // Form1
         // 
@@ -198,4 +208,5 @@ partial class Form1
     private TextBox textBox1;
     private Button button2;
     private Label label1;
+    private ToolStripMenuItem імпортуватиМодельToolStripMenuItem;
 }

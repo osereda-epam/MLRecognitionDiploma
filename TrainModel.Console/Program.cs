@@ -70,8 +70,6 @@ namespace MnistDemo
             var json = _net.ToJson();
 
             File.WriteAllText(@"NeuralNetwork.json", json);
-
-
         }
 
         private void Test(Volume<double> x, int[] labels, CircularBuffer<double> accuracy, bool forward = true)

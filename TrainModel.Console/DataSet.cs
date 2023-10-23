@@ -6,7 +6,7 @@ using ConvNetSharp.Volume.Double;
 
 namespace MnistDemo
 {
-    internal class DataSet
+    public class DataSet
     {
         private readonly List<MnistEntry> _trainImages;
         private readonly Random _random = new Random(RandomUtilities.Seed);

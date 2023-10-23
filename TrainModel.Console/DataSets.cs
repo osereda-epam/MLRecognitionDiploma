@@ -4,7 +4,7 @@ using System.Net;
 
 namespace MnistDemo
 {
-    internal class DataSets
+    public class DataSets
     {
         private const string urlMnist = @"https://rds.westernsydney.edu.au/Institutes/MARCS/BENS/EMNIST/emnist-gzip.zip";
         private const string mnistFolder = @"..\Emnist\";
